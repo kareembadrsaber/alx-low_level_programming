@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
  * main - Entry point
@@ -9,17 +9,26 @@
  */
 int main(void)
 {
-	int n;
+    int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    srand(time(0)); /* Seed the random number generator with the current time */
+    n = rand() - RAND_MAX / 2; /* Generate a random number and store it in n */
 
-	if (n == 0)
-		printf("%d is zero\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
-	else
-		printf("%d is positive\n", n);
+    printf("%d ", n); /* Print the number */
 
-	return (0);
+    if (n > 0)
+    {
+        printf("is positive\n");
+    }
+    else if (n == 0)
+    {
+        printf("is zero\n");
+    }
+    else
+    {
+        printf("is negative\n");
+    }
+
+    return (0);
 }
+
