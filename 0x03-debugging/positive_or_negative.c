@@ -3,6 +3,8 @@
 /**
  * positive_or_negative - Prints if an integer is positive, negative, or zero.
  * @i: The integer to check
+ *
+ * Return: No return value (void)
  */
 void positive_or_negative(int i)
 {
